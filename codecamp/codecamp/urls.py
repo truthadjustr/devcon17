@@ -19,9 +19,11 @@ from django.contrib import admin
 from jobs.views import JobList,ArcanysJobList
 from rest_framework.routers import DefaultRouter
 from companies.views import CompanyAPI
+from jobs.views import JobAPI
 
 api_v1_router = DefaultRouter()
 api_v1_router.register(r'companies',CompanyAPI)
+api_v1_router.register(r'jobs',JobAPI)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
