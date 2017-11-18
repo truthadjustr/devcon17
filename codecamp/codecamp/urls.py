@@ -24,6 +24,7 @@ from jobs.views import JobAPI
 api_v1_router = DefaultRouter()
 api_v1_router.register(r'companies',CompanyAPI)
 api_v1_router.register(r'jobs',JobAPI)
+#api_v1_router.register(r'application',application)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
