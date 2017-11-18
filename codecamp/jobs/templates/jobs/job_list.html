@@ -1,0 +1,7 @@
+<h3>index</h3>
+<hr>
+<ul>
+    {% for job in object_list %}
+    <li>{{ job.title }} - {{ job.company.name }} </li>
+    {% endfor %}
+</ul>

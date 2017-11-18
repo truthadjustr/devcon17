@@ -16,6 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from jobs.views import JobList,ArcanysJobList
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^jobs/', JobList.as_view()),
+    url(r'^ajobs/', ArcanysJobList.as_view())
+    
 ]
