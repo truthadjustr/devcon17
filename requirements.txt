@@ -3,7 +3,7 @@ certifi==2017.11.5
 chardet==3.0.4
 curtsies==0.2.11
 Django==1.11.7
-djangorestframework==3.7.3
+djangorestframework==3.11.2
 greenlet==0.4.12
 idna==2.6
 Pygments==2.2.0
